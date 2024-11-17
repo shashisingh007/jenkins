@@ -2,10 +2,26 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('login to aws') {
             steps {
-                echo 'Hey there'
+                echo 'step 1'
+            }
+        }
+        stage('go to xyz') {
+            steps {
+                echo 'step 2'
+            }
+        }
+        stage('download') {
+            steps {
+                echo 'abc'
+            }
+        }
+        stage('email') {
+            steps {
+                echo 'done'
             }
         }
     }
+
 }
