@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('login to aws') {
             steps {
-                touch abc.txt
+                script {
+                    sh 'touch abc.txt'
+                }
             }
         }
         stage('go to xyz') {
